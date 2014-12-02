@@ -14,7 +14,7 @@ nav {
   nav .logo:hover {
     border: none; }
   nav img {
-    width: 120px;
+    width: 140px;
     margin-right: 30px; }
   nav a {
     font-family: 'Montserrat', sans-serif;
@@ -161,8 +161,11 @@ header {
   top: 30px;
   font-family: 'Montserrat', sans-serif;
   font-size: .7em;
-  color: #686868;
-  word-spacing: 5px; }
+  color: #c8433c;
+  word-spacing: 5px;
+  transition: all .2s ease-in-out; }
+  .learnMore:hover {
+    transform: scale(1.3); }
 
 .boxLong {
   height: 220px;
@@ -211,7 +214,9 @@ header {
   margin-left: auto;
   margin-right: auto;
   clear: both;
-  color: #252525; }
+  color: #252525;
+  overflow: hidden;
+  padding-bottom: 100px; }
   .bottomContent:after {
     content: "";
     display: table;
@@ -225,6 +230,9 @@ header {
   margin-left: 8.5298%; }
   .researchInfo:last-child {
     margin-right: 0; }
+  @media screen and (max-width: 800px) {
+    .researchInfo {
+      margin-left: 4.2649%; } }
   .researchInfo img {
     float: left;
     display: block;
@@ -240,7 +248,8 @@ header {
     .researchInfo .infoContainer:last-child {
       margin-right: 0; }
     .researchInfo .infoContainer p {
-      font-family: 'PT Serif', serif; }
+      font-family: 'PT Serif', serif;
+      display: inline-block; }
     .researchInfo .infoContainer p:nth-of-type(2) {
       font-family: 'Montserrat', sans-serif;
       font-size: 1.6em;
@@ -253,3 +262,50 @@ header {
       display: block;
       font-size: 2.5em;
       font-family: 'Montserrat', sans-serif; }
+
+.footerWrapper {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto; }
+  .footerWrapper:after {
+    content: "";
+    display: table;
+    clear: both; }
+
+footer {
+  height: 250px;
+  background-color: #252525; }
+  footer .footerContent {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 31.76157%;
+    text-align: center;
+    position: relative;
+    top: 50px; }
+    footer .footerContent:last-child {
+      margin-right: 0; }
+    footer .footerContent:nth-child(4n) {
+      margin-right: 0; }
+    footer .footerContent:nth-child(4n+1) {
+      clear: left; }
+    footer .footerContent p {
+      font-family: 'Montserrat', sans-serif;
+      color: white;
+      font-size: 1.4em;
+      letter-spacing: 2px; }
+    footer .footerContent a {
+      font-family: 'PT Serif', serif;
+      display: block;
+      text-decoration: none;
+      color: lightgrey;
+      font-size: .7em;
+      margin-bottom: 15px;
+      transition: all .1s ease-in-out; }
+      footer .footerContent a:hover {
+        transform: scale(1.3);
+        color: #c8433c; }
+
+#services {
+  border-left: 1px solid lightgrey;
+  border-right: 1px solid lightgrey; }

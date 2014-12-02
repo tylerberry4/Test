@@ -1,13 +1,19 @@
-// $(function() {
-//   $("#container").sliphover();
-// });
+
 $( document ).ready(function() {
   $('.hover').sliphover();
+
+
 });
+// 	$(window).scroll(function() {    
+//     var scroll = $(window).scrollTop();
 
-// $(function() {
+//     if (scroll >= 700) {
+//         $("nav").addClass("sticky");
+//     } else {
+//         $("nav").removeClass("sticky");
+//     }
+// });
 
-//   //call sliphover plugin
-//   $('.demo').sliphover();
 
-// })
+
+
