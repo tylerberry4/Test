@@ -1,0 +1,104 @@
+ // Bourbon & Neat
+@import '../bower_components/bourbon/dist/bourbon';
+@import '../bower_components/neat/app/assets/stylesheets/neat';
+
+body {
+  margin: 0;
+}
+
+nav {
+  z-index: 1;
+  position: absolute;
+  top: 12%;
+  left: 20%;
+
+  img {
+    width: 100px;
+    margin-right: 30px;
+  }
+  a {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: .75em;
+    color: grey;
+    text-decoration: none;
+    margin-right: 30px;
+  }
+}
+
+header {
+  max-width:100%;
+  position: relative;
+  margin-bottom: -5px; 
+  
+  img {
+  max-width:100%
+  }
+
+    .headerContent {
+    z-index: 1;
+    position: absolute;
+    top: 32%;
+    left: 20%;
+    color: white;
+    p {
+      margin: 0;
+      font-family: 'PT Serif', serif;
+      color: rgb(195, 194, 194);
+      font-size: .8em;
+    }
+    p:first-of-type {
+      font-style: italic;
+    }
+    h1 {
+      font-size: 2.8em;
+      font-family: 'Montserrat', sans-serif;
+      margin: 0;
+      letter-spacing: 2px;
+    }
+  }
+}
+
+.horizontalLine {
+  height: 1px;
+  width: 25px;
+  background-color: lightgrey; 
+  margin: 5px 0 5px 2px;
+}
+
+.hiddenButton {
+  position: absolute;
+  left: 25%;
+  bottom: 22%;
+  padding: 15px 60px;
+  opacity: 0;
+}
+
+.sectionDivider {
+  height: 40px;
+  background-color: #ECECEC;
+}
+
+.cornerImg {
+    width: 200px;
+    float: right;
+    margin: 20px;
+
+  }
+
+.mainContent {
+  clear: both;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
