@@ -11,8 +11,10 @@ nav {
   position: absolute;
   top: 12%;
   left: 20%; }
+  nav .logo:hover {
+    border: none; }
   nav img {
-    width: 100px;
+    width: 120px;
     margin-right: 30px; }
   nav a {
     font-family: 'Montserrat', sans-serif;
@@ -20,7 +22,12 @@ nav {
     font-size: .75em;
     color: grey;
     text-decoration: none;
-    margin-right: 30px; }
+    margin-right: 30px;
+    transition: all 0.5s ease; }
+    nav a:hover {
+      color: white;
+      border-bottom: 2px solid white;
+      padding-bottom: 8px; }
 
 header {
   max-width: 100%;
@@ -70,14 +77,18 @@ header {
   margin: 30px 30px 0 30px; }
 
 .contentWrapper {
-  clear: both; }
+  clear: both;
+  background: url(http://i.imgur.com/Cq7FtJ1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top; }
   .contentWrapper .horizontalLine {
     float: left;
     display: block;
     margin-right: 2.35765%;
     width: 57.35098%;
     margin-top: 40px;
-    margin-bottom: 50px; }
+    margin-bottom: 150px; }
     .contentWrapper .horizontalLine:last-child {
       margin-right: 0; }
 
@@ -107,7 +118,7 @@ header {
     letter-spacing: 1.5px;
     color: #252525;
     position: relative;
-    right: 55px; }
+    right: 45px; }
   .mainContent .contentNumber {
     margin: -13px;
     color: #252525;
@@ -126,17 +137,119 @@ header {
     margin-right: 80px;
     line-height: 125%; }
   .mainContent p {
-    color: #a5a5a5;
+    color: #686868;
     font-family: 'PT Serif', serif;
     font-size: .8em;
     line-height: 200%;
     margin-right: 105px; }
 
+.imgWrapper span {
+  font-size: 2.4em; }
+.imgWrapper p {
+  position: relative;
+  top: 200px;
+  right: 40px;
+  color: white;
+  font-size: 2em;
+  margin: 0; }
+
 .learnMore {
+  text-decoration: none;
   display: inline-block;
   margin: 0;
   position: relative;
   top: 30px;
   font-family: 'Montserrat', sans-serif;
   font-size: .7em;
-  color: #686868; }
+  color: #686868;
+  word-spacing: 5px; }
+
+.boxLong {
+  height: 220px;
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 48.82117%;
+  margin-bottom: 20px; }
+  .boxLong:last-child {
+    margin-right: 0; }
+  .boxLong:nth-child(4n) {
+    margin-right: 0; }
+  .boxLong:nth-child(4n+1) {
+    clear: left; }
+
+.box {
+  height: 220px;
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 23.23176%; }
+  .box:last-child {
+    margin-right: 0; }
+  .box:nth-child(4n) {
+    margin-right: 0; }
+  .box:nth-child(4n+1) {
+    clear: left; }
+
+.sliphover-container {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.4em; }
+
+#lineTwo {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 48.82117%;
+  margin-left: 25.58941%;
+  margin-top: 100px;
+  margin-bottom: 100px; }
+  #lineTwo:last-child {
+    margin-right: 0; }
+
+.bottomContent {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto;
+  clear: both;
+  color: #252525; }
+  .bottomContent:after {
+    content: "";
+    display: table;
+    clear: both; }
+
+.researchInfo {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 40.29137%;
+  margin-left: 8.5298%; }
+  .researchInfo:last-child {
+    margin-right: 0; }
+  .researchInfo img {
+    float: left;
+    display: block;
+    margin-right: 4.82916%;
+    width: 30.11389%; }
+    .researchInfo img:last-child {
+      margin-right: 0; }
+  .researchInfo .infoContainer {
+    float: left;
+    display: block;
+    margin-right: 4.82916%;
+    width: 65.05695%; }
+    .researchInfo .infoContainer:last-child {
+      margin-right: 0; }
+    .researchInfo .infoContainer p {
+      font-family: 'PT Serif', serif; }
+    .researchInfo .infoContainer p:nth-of-type(2) {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 1.6em;
+      margin: 0;
+      position: relative;
+      left: 65px;
+      bottom: 55px; }
+    .researchInfo .infoContainer span {
+      position: relative;
+      display: block;
+      font-size: 2.5em;
+      font-family: 'Montserrat', sans-serif; }

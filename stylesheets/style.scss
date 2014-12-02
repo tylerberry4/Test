@@ -12,8 +12,14 @@ nav {
   top: 12%;
   left: 20%;
 
+  .logo {
+    &:hover {
+      border: none;
+      }
+    }
+
   img {
-    width: 100px;
+    width: 120px;
     margin-right: 30px;
   }
   a {
@@ -23,6 +29,12 @@ nav {
     color: grey;
     text-decoration: none;
     margin-right: 30px;
+    transition: all 0.5s ease;
+    &:hover {
+      color: white;
+      border-bottom: 2px solid white;
+      padding-bottom: 8px;
+    }
   }
 }
 
@@ -88,16 +100,19 @@ header {
 
 .contentWrapper {
   clear: both;
+  background: url(http://i.imgur.com/Cq7FtJ1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
   .horizontalLine {
     @include span-columns(7);
     margin-top: 40px;
-    margin-bottom: 50px;
+    margin-bottom: 150px;
   }
 }
 
 .contentContainer {
-  @include outer-container {
-  }
+  @include outer-container;
 } 
 
 .mainContent {
@@ -113,7 +128,7 @@ header {
     letter-spacing: 1.5px;
     color: #252525;
     position: relative;
-    right: 55px;
+    right: 45px;
   }
   .contentNumber {
     margin: -13px;
@@ -135,7 +150,7 @@ header {
     line-height: 125%
   }
   p {
-    color: #a5a5a5;
+    color: #686868;
     font-family: 'PT Serif', serif;
     font-size: .8em;
     line-height: 200%;
@@ -143,7 +158,22 @@ header {
   }
 }
 
+.imgWrapper {
+  span {
+    font-size: 2.4em;
+  }
+  p {
+    position: relative;
+    top: 200px;
+    right: 40px;
+    color: white;
+    font-size: 2em;
+    margin: 0;
+  }
+}
+
 .learnMore {
+  text-decoration: none;
   display: inline-block;
   margin: 0;
   position: relative;
@@ -151,12 +181,67 @@ header {
   font-family: 'Montserrat', sans-serif;
   font-size: .7em;
   color: #686868;
+  word-spacing: 5px;
 }
 
+.boxLong {
+  height: 220px;
+  @include span-columns(6);
+  @include omega(4n);
+  margin-bottom: 20px; 
+}
 
+.box {
+  height: 220px;
+  @include span-columns(3);
+  @include omega(4n);
+}
 
+.sliphover-container {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.4em;
+}
 
+#lineTwo {
+  @include span-columns(6);
+  @include shift(3);
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
 
+.bottomContent {
+  @include outer-container;
+  clear: both;
+  color: #252525;
+}
+
+.researchInfo {
+  @include span-columns(5);
+  @include shift(1);
+  img {
+    @include span-columns(2 of 6);
+   }
+  .infoContainer {
+    @include span-columns(4 of 6);
+    p {
+    font-family: 'PT Serif', serif;
+    }
+    p:nth-of-type(2) {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.6em;
+    margin: 0;
+    position: relative;
+    left: 65px;
+    bottom: 55px;
+    }
+    span {
+      position: relative;
+      display: block;
+      font-size: 2.5em;
+      font-family: 'Montserrat', sans-serif;
+    }
+  }
+}
 
 
 
